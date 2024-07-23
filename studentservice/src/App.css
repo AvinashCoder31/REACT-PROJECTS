@@ -94,3 +94,16 @@ form input[type="email"] {
   padding: 10px;
   box-sizing: border-box;
 }
+
+.del{
+  background-color: #f44336;
+}
+
+.del:hover {
+  background-color: #e74c3c;
+}
+
+.btns{
+  display: flex;
+  justify-content: space-evenly;
+}

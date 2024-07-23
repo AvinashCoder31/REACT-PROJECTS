@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import StudentService from '../service/StudentService';
 import { useParams, useNavigate } from 'react-router-dom';
-import '../App.css';
+import '../App.css';  // Make sure this path is correct
 
 const StudentForm = () => {
     const [student, setStudent] = useState({ name: '', email: '', course: '' });
@@ -37,7 +37,7 @@ const StudentForm = () => {
     };
 
     return (
-        <div>
+        <div className="container">
             <h2>{isEdit ? 'Edit Student' : 'Add Student'}</h2>
             <form onSubmit={handleSubmit}>
                 <div>
